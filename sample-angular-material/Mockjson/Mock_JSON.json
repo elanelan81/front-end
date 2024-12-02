@@ -1,0 +1,321 @@
+{
+  "uuid": "81ebda58-cfc6-4ef8-8134-c6afbc9da0d1",
+  "lastMigration": 33,
+  "name": "Mock JSON",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "c4c9dd3a-e0ae-475d-9fc7-fbe924f87d67",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "products",
+      "responses": [
+        {
+          "uuid": "badfb4f1-ea61-4186-927d-af4c901bf819",
+          "body": "\n[\n  {\n    \"id\": 123,\n    \"name\": \"Sample\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_01.jpg\"\n  },\n  {\n    \"id\": 222,\n    \"name\": \"Sample1\",\n    \"price\": 10.99,\n    \"imageUrl\": \"Product_02.jpg\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "f9a4ee03-65e0-4bb6-918e-7c18ddc1136d",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "cart",
+      "responses": [
+        {
+          "uuid": "15120e39-4813-4cf4-a14f-c2fe26711659",
+          "body": "\n[\n  {\n    \"id\": 123,\n    \"name\": \"Sample\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_01.jpg\"\n  },\n  {\n    \"id\": 222,\n    \"name\": \"Sample1\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_02.jpg\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "conte",
+              "value": ""
+            },
+            {
+              "key": "",
+              "value": ""
+            },
+            {
+              "key": "",
+              "value": ""
+            },
+            {
+              "key": "",
+              "value": ""
+            },
+            {
+              "key": "",
+              "value": ""
+            },
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "49e7110c-93d3-4fcf-9360-243d325a8681",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "bcdf8d21-7aa0-4ab6-9ae2-1c3737f3894b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "b7fe40a2-d9ea-435a-b675-f8d5460deea4",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "cart",
+      "responses": [
+        {
+          "uuid": "6c657e21-14ba-451d-a637-1397ac8d8b04",
+          "body": "\n[\n  {\n    \"id\": 123,\n    \"name\": \"Sample\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_01.jpg\"\n  },\n  {\n    \"id\": 222,\n    \"name\": \"Sample1\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_02.jpg\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "21082c19-e88c-4cd7-9f73-ce395ad440c3",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "cart",
+      "responses": [
+        {
+          "uuid": "9a3b51b4-b911-4393-921e-f45c7e79194d",
+          "body": "\n[\n  {\n    \"id\": 123,\n    \"name\": \"Sample\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_01.jpg\"\n  },\n  {\n    \"id\": 222,\n    \"name\": \"Sample1\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_02.jpg\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "4412bfba-82e1-432d-aa94-7786cd9a5229",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "checkout",
+      "responses": [
+        {
+          "uuid": "6bfb69f2-19a8-4758-b107-b2497514d8ed",
+          "body": "\n[\n  {\n    \"id\": 123,\n    \"name\": \"Sample\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_01.jpg\"\n  },\n  {\n    \"id\": 222,\n    \"name\": \"Sample1\",\n    \"price\": 100.99,\n    \"imageUrl\": \"Product_02.jpg\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "c4c9dd3a-e0ae-475d-9fc7-fbe924f87d67"
+    },
+    {
+      "type": "route",
+      "uuid": "f9a4ee03-65e0-4bb6-918e-7c18ddc1136d"
+    },
+    {
+      "type": "route",
+      "uuid": "b7fe40a2-d9ea-435a-b675-f8d5460deea4"
+    },
+    {
+      "type": "route",
+      "uuid": "21082c19-e88c-4cd7-9f73-ce395ad440c3"
+    },
+    {
+      "type": "route",
+      "uuid": "4412bfba-82e1-432d-aa94-7786cd9a5229"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
