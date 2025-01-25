@@ -1,0 +1,29 @@
+<div class="top-menu">
+
+    <img class="logo"
+         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+
+</div>
+
+
+<div class="courses">
+    @for (course of courses; track course.id; let index = $index; 
+    let count = $count; let first =$first; let last = $last;
+    let even = $even; let odd= $odd) {
+        <h1> Count: {{count}}</h1>
+        <course-card 
+        [course]="course"
+        [index]="$index"
+        [class.is-first] = "$first"
+        [class.is-last] = "$last"
+        [class.is-even] = "$even"
+        [class.is-odd] = "$odd"
+        (courseSelected)="onCourseSelected($event)"
+        />
+    }
+    @empty {
+        <h1>No courses found1</h1>
+    }
+</div>
+
+
